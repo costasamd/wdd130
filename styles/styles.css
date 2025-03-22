@@ -1,17 +1,27 @@
+:root{
+    --heading-backgorund-color: #0c2a04;
+    --background-layout: white;
+    --padding: 1rem;
+    --typo-color: white;
+    --border: 1px solid rgba(0, 0, 0, 0.1)
+
+    
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 nav {
-    background-color: #0c2a04;
-    padding: 10px;
+    background-color: var(--heading-backgorund-color);
+    padding: var(--padding);
 }
 
 nav a {
-    color: white;
-    display: block;
+    color: var(--typo-color);
     padding: 20px;
 }
 
@@ -66,11 +76,9 @@ footer {
     margin: 1rem;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0/ 10%);
-    background-color: #0c2a04;
-    color: white;
+    box-shadow: 0 0 30px;
+    background-color: var(--heading-backgorund-color);
+    color: var(--typo-color);
     clear: both;
 }
 
-.subtitle {
-    clear: both;
-}
