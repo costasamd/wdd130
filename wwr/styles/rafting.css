@@ -1,0 +1,61 @@
+:root{
+    --primary-color: #58b7e5;
+    --secondary-color: #afddf3;
+    --ascent-1: #ffffff;
+    --ascent-2: #c33d39;
+    --headings: 'Winky Sans'
+}
+
+*{
+    background-color: var(--primary-color);
+}
+
+h1{
+    font-family: var(--headings);
+    color: var(--ascent-1);
+    position: absolute;
+    top: 300px;
+    right: 850px;
+    border: 1px;
+    
+    
+}
+
+article{
+    position:absolute;
+    top: 500px;
+    right: 200px;
+    border: 1px solid;
+    padding: 1rem;
+    opacity: 0.8;
+
+
+}
+
+article img{
+    position: absolute;
+    max-width: 300px;
+    float:right;
+
+}
+
+h2{
+    font-family: var(--headings);
+    color: var(--ascent-1);
+}
+
+.sociallink{
+    text-decoration: none;
+}
+
+.hero img{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section img{
+    display: flex;
+    padding: 1rem;
+}
