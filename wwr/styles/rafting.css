@@ -44,7 +44,7 @@ h2{
     color: var(--ascent-1);
 }
 
-.sociallink {
+.sociallinks a {
     text-decoration: none;
 }
 
