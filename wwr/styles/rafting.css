@@ -101,25 +101,28 @@ article img {
 
 }
 
+.adventure{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+
 .adventure h2 {
+    grid-area: 1/2/1/4;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-figure{
-    margin: 1rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+figure {
+    grid-row: span 2/5;
+
 }
 
 figure img {
-    width: 350px;
+    width: 300px;
     height: auto;
 }
-
-
 
 footer{
  display: flex;
@@ -133,4 +136,6 @@ footer p {
 }
 .sociallinks a {
     text-decoration: none;
+    width: 30px;
+    height: auto;
 }
