@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #58b7e5;
-    --secondary-color: #afddf3;
-    --ascent-1: #ffffff;
-    --ascent-2: #c33d39;
+    --primary-color: #bee7fc;
+    --secondary-color: #f2f2f2a3;
+    --ascent-1: #000000;
+    --ascent-2: #0000ee;
     --headings: 'Winky Sans'
 }
 
@@ -28,7 +28,7 @@ header {
 
 h1 {
     font-family: var(--headings);
-    color: var(--ascent-1);
+    color: var(--ascent-2);
     font-size:xx-large;
     position: absolute;
     top: 200px;
