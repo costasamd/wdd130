@@ -32,7 +32,7 @@ h1 {
     font-size:xx-large;
     position: absolute;
     top: 200px;
-    right: 600px;
+    right: 850px;
     border: 0;   
 }
 
@@ -125,17 +125,153 @@ figure img {
 }
 
 footer{
- display: flex;
- flex-direction: row;
- justify-content: space-between;
+ padding: 1rem;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ align-items: center;
+ align-content: center;
 }
 
 footer p {
-    position: relative;
-    left: 600px;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
 }
+
+footer a {
+    grid-area: 1/2/1/2;
+    display: flex;
+    justify-content: center;
+}
+
+.sociallinks {
+    padding: 1rem;
+    grid-column: 4;
+    grid-row: span 2;
+    display: flex;
+    flex-direction: row;
+}
+
 .sociallinks a {
     text-decoration: none;
-    width: 30px;
+}
+
+/* styling the contact us page */
+
+#hero-contact {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+#hero-contact img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.information {
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    
+}
+
+
+.information p {
+    font-size: x-large;
+    grid-column: 1;
+    grid-row: 2;
+    
+}
+
+.information iframe {
+    grid-column: span 3;
+    grid-row: span 2;
+    max-width: 800px;
+    max-height: 300px;
+
+}
+
+#adress {
+    font-size: xx-large;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.information h2 {
+    grid-row: 3;
+}
+
+.information figure {
+    grid-row: 4;
+}
+
+.information img {
+    width: 250px;
     height: auto;
+}
+
+.information figcaption {
+    font-family: var(--headings);
+    font-size: larger;
+    color: var(--ascent-1);
+}
+
+form {
+    margin-left: 700px;
+    width: 400px;
+    height: auto;
+    padding: 1rem;
+    border: 2px solid rgb(0 0 0 / 0.5);
+    border-radius: 1rem;
+    background-color: var(--secondary-color);
+    display: grid;
+}
+
+legend{
+    font-size: 1.2rem;
+    background-color: var(--secondary-color);
+}
+
+fieldset{
+    background-color: var(--secondary-color);
+}
+
+label {
+    background-color: var(--secondary-color);
+}
+
+form p {
+    background-color: var(--secondary-color);
+}
+
+form h2 {
+    color:black;
+    background-color: var(--secondary-color);
+}
+
+textarea {
+    background-color: #fff;
+}
+
+input[type="text"] {
+    background-color: #fff;
+}
+
+button {
+    margin-left: 6rem;
+    width: 200px;
+    height: 30px;
+    border: 1px solid rgb(0 0 0 / 0.8);
+    border-radius: .5rem;
+}
+
+button:hover {
+    background-color: #fff;
+    color:var(--primary-color)
 }
