@@ -31,9 +31,10 @@ h1 {
     color: var(--ascent-2);
     font-size:xx-large;
     position: absolute;
-    top: 200px;
-    right: 850px;
-    border: 0;   
+    top: 300px;
+    right: 750px;
+    border: 0;
+    background-color: rgb(255 255 255 / 0.5);   
 }
 
 h2{
@@ -273,5 +274,277 @@ button {
 
 button:hover {
     background-color: #fff;
-    color:var(--primary-color)
+    color:var(--ascent-2)
 }
+
+/*------------------------------------------------------------------------------*/
+
+/* index page */
+
+.ind h2{
+    font-size: 50px;
+    
+    
+}
+#new {
+    position: absolute;
+    top: 900px;
+    right: 500px;
+    background-color: transparent;
+}
+#time {
+    position: absolute;
+    top: 1000px;
+    right: 650px;
+    background-color: transparent;
+}
+.ind button {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(255 255 255 / 0.2);
+    font-size: xx-large;
+    position: absolute;
+    right: 800px;
+    top:1200px;
+}
+
+.ind button:hover {
+    background-color: #fff;
+    color: #0000ee;
+}
+
+.looking {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.looking img {
+    width: 100%; 
+}
+
+.looking figcaption {
+    font-size: 40px;
+}
+
+#swimm {
+    margin-left: 0;
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+#camp {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#rapid {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.newsletter {
+    width: 100%;
+    height: auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.newsletter img {
+    width: 450px;
+    grid-column: 1;
+    grid-row: span 2;
+}
+
+.newsletter blockquote{
+    font-size: larger;
+    font-weight: 600;
+    display: block;
+    border: 1px solid rgb(0 0 0 / 0.5);
+    border-radius: 1rem;
+    text-align: center;
+    background-color: #fff;
+    width: 300px;
+    height: 250px;
+    grid-column: 2;
+    grid-row: 1;   
+}
+
+.newsletter p {
+    background-color: transparent;
+}
+.newsletter form {
+    grid-column: 2;
+    grid-row: 2;
+    width: 300px;
+    height: 250px;
+    padding: 0;
+    margin: 40px;
+
+}
+
+.newsletter form button {
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 100px;
+}
+
+.newsletter form button:hover {
+    color: var(--ascent-2);
+}
+
+.newsletter form legend {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.newsletter form fieldset label {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    padding: 8px;
+}
+
+/*------------------------------------------------------------------------------*/
+
+/* Trips page */
+
+#reserve {
+    font-size: 4rem;
+    background-color: rgb(255, 255, 255, 0.4);
+    position: absolute;
+    top: 700px;
+    left: 600px;
+}
+
+#press {
+    font-size: 4rem;
+    background-color:rgb(255, 255, 255, 0.4);
+    position: absolute;
+    top: 800px;
+    left: 400px;
+}
+
+.call button {
+    font-size: 3rem;
+    position: absolute;
+    top: 1050px;
+    left: 750px;;
+    width: 300px;
+    height: 60px;
+    background-color: transparent;
+}
+
+.call button:hover {
+    background-color: #fff;
+    color: var(--ascent-2);
+}
+
+.activities {
+    display: grid;
+    grid-column: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+}
+
+.one{
+    grid-column: span 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.one img {
+    width: 300px;
+    height: auto;   
+}
+.one blockquote {
+    display: block;
+    width: 400px;
+    border: 1px solid rgb(0 0 0 / 0.5);
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+.one blockquote p {
+    background-color: transparent;
+}
+
+.two {
+    grid-column: span 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.two img{
+    width: 300px;
+    height: auto;    
+}
+.two blockquote {
+    display: block;
+    width: 400px;
+    border: 1px solid rgb(0 0 0 / 0.5);
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+.two blockquote p {
+    background-color: transparent;
+}
+
+.three {
+    grid-column: span 2;
+    grid-row: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.three img {
+    width: 400px;
+    height: auto;   
+}
+
+.three blockquote {
+    display: block;
+    width: 400px;
+    border: 1px solid rgb(0 0 0 / 0.5);
+    border-radius: 0.5rem;
+    background-color: var(--secondary-color);
+}
+
+.three blockquote p {
+    background-color: transparent;
+}
+
+.four {
+    grid-column: span 2;
+    grid-row: 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+ table, th, td {
+    border: 2px solid rgb(0 0 0 / 0.8);
+    padding: 1rem;
+    margin: 1rem;
+ }
+
+ .show {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    justify-items: center;
+ }
+
+ .gallery {
+    margin: 1rem;
+ }
+
+ .gallery:hover {
+    border: 1px solid #0000ee;
+    
+ }
