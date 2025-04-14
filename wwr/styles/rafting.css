@@ -408,6 +408,11 @@ button:hover {
 
 /* Trips page */
 
+video {
+    width: 100%;
+    height: auto;
+}
+
 #reserve {
     font-size: 4rem;
     background-color: rgb(255, 255, 255, 0.4);
